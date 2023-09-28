@@ -1,6 +1,6 @@
-import { delContact } from 'redux/reducer';
-import { getFilter, getContacts } from 'redux/selectors';
 import { useDispatch, useSelector } from 'react-redux';
+import { delContact } from 'redux/operations';
+import { getContacts, getFilter } from 'redux/selectors';
 import css from './ContactList.module.css';
 
 export const ContactList = () => {
@@ -38,4 +38,5 @@ export const ContactList = () => {
         ))}
       </ul>
     </div>
-)};
+  );
+};
